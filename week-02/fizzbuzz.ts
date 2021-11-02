@@ -1,11 +1,16 @@
 'use strict';
-let i: number = 1;
+
+export function fizzBuzz() {
+    let i: number = 1;
 
 for (let i: number = 1; i < 100; i++) {
     if (i % 3 === 0)
-    console.log(`fizz`);
+    console.log(`Fizz`);
     if (i % 5 === 0)
-    console.log(`buzz`);
+    console.log(`Buzz`);
+    if (i % 3 === 0 && i % 5 === 0)
+    console.log(`FizzBuzz`);
     else console.log(i);
 }
-    
+  }
+fizzBuzz();
